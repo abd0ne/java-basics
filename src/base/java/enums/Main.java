@@ -1,4 +1,4 @@
-package ee.jakarta.enums;
+package base.java.enums;
 
 import java.util.Arrays;
 

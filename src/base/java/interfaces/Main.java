@@ -1,4 +1,4 @@
-package ee.jakarta.interfaces;
+package base.java.interfaces;
 
 /*
 Interface est une classe abstraite dont toutes les méthodes sont abstraites et dont tous les attributs sont constants :

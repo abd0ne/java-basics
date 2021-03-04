@@ -1,4 +1,4 @@
-package ee.jakarta.interfaces;
+package base.java.interfaces;
 // Il faut rédefinir les methodes via Interfaces1 et parent InterfaceMain
 public class Interface1Impl implements Interface1 {
 

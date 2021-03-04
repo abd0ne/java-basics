@@ -1,4 +1,4 @@
-package ee.jakarta.abstracts;
+package base.java.abstracts;
 
 abstract public class Forme {
     abstract public double aire();

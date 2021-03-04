@@ -1,4 +1,4 @@
-package ee.jakarta.autoboxing;
+package base.java.autoboxing;
 /*
 Autoboxing : conversion des types primitifs vers types wrappers
 Unboxing : wrappers > primitifs

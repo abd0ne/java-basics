@@ -1,4 +1,4 @@
-package ee.jakarta.abstracts;
+package base.java.abstracts;
 
 public class Cercle extends Forme{
     @Override

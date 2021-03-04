@@ -1,4 +1,4 @@
-package ee.jakarta.interfaces;
+package base.java.interfaces;
 
 public interface Interface1 extends InterfaceMain {
     int CONST = 10; // implicitement static

@@ -1,4 +1,4 @@
-package ee.jakarta.abstracts;
+package base.java.abstracts;
 /*
 Classe abstract : classe qu'on ne peut pas instancier
 Méthode abstract: méthode doit être redéfinie par les classes filles

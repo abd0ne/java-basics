@@ -1,4 +1,4 @@
-package ee.jakarta.interfaces;
+package base.java.interfaces;
 
 public interface InterfaceMain {
     static void staticMethod(){

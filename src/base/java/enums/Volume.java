@@ -1,4 +1,4 @@
-package ee.jakarta.enums;
+package base.java.enums;
 /*
 Enum
 Enum est une série de données constantes ayant un type sûr

@@ -1,4 +1,4 @@
-package ee.jakarta.abstracts;
+package base.java.abstracts;
 
 public class Carre extends Forme {
     int cote = 4;

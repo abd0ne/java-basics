@@ -1,4 +1,4 @@
-package ee.jakarta.collections;
+package base.java.collections;
 
 import java.util.Comparator;
 
