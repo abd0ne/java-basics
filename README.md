@@ -12,5 +12,6 @@ Chaque "package" correspond une fonctionnalité de Java.
             |--- LinkedList<E>
             |--- CopyOnWriteArrayList<E>
             |--- Vector<E>
-       |--- interfaces : Interface est une classe abstraite dont toutes les méthodes sont abstraites et dont tous les attributs sont constants
+       |--- interfaces : Interface est une classe abstraite dont toutes les méthodes sont abstraites
+            et dont tous les attributs sont constants
        |--- enum : Enum est une série de données constantes ayant un type sûr
