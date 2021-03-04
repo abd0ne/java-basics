@@ -1,22 +1,34 @@
-package io.sorabe.collections;
+package ee.jakarta.collections;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class SetTest {
+/*
+ Set n'autorise pas les doublons
+ Element unique
+ Autorise au max un null
+ Ne maintient pas l'ordre sauf LinkedHashSet
+ */
+public class SetCollection {
     public static void main(String[] args) {
-        // Non doublon
-        // ne maintient pas l'ordre
+        System.out.println();
+        System.out.println("-------------------");
+        System.out.println("HashSet<E>");
+        System.out.println("-------------------");
         Set<String> sets = new HashSet<>();
         sets.add("D");
         sets.add("X");
         sets.add("1");
         sets.add("A");
         sets.forEach(System.out::println);
+        System.out.println();
+        System.out.println("-------------------");
+        System.out.println("Treeset<E>");
+        System.out.println("-------------------");
         //Treeset
-        //Implemenetation of SortedSet Interface
-        // natural ordering or Comparator
+        //Implemenetation de SortedSet Interface
+        // ordre naturel avec Comparator
         TreeSet<String> treeSet = new TreeSet<>();
         treeSet.add("A");
         treeSet.add("B");
@@ -24,7 +36,7 @@ public class SetTest {
         treeSet.add("C");
         treeSet.add("D");
         System.out.println(treeSet);
-        // With Comparator
+        // Avec Comparator externe
         TreeSet<String> treeSet1 = new TreeSet<>(new TheComparator());
         treeSet1.add("G");
         treeSet1.add("A");
@@ -32,8 +44,6 @@ public class SetTest {
         treeSet1.add("K");
         treeSet1.add("S");
         treeSet1.add("4");
-        System.out.println("Set before using the comparator: "+ treeSet1);
-
         System.out.println("The elements sorted in descending"+ " order: ");
         for (String element : treeSet1)
             System.out.print(element + " ");

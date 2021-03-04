@@ -1,8 +1,5 @@
-package io.sorabe.abstracts;
-/*
-Classe abstract : classe qu'on ne peut pas instancier
-Méthode abstract: méthode doit être redéfinie par les classes filles
- */
+package ee.jakarta.abstracts;
+
 abstract public class Forme {
     abstract public double aire();
     abstract protected String show();

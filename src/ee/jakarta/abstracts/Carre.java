@@ -1,4 +1,4 @@
-package io.sorabe.abstracts;
+package ee.jakarta.abstracts;
 
 public class Carre extends Forme {
     int cote = 4;

@@ -1,4 +1,4 @@
-package io.sorabe.autoboxing;
+package ee.jakarta.autoboxing;
 /*
 Autoboxing : conversion des types primitifs vers types wrappers
 Unboxing : wrappers > primitifs

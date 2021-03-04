@@ -1,4 +1,4 @@
-package io.sorabe.collections;
+package ee.jakarta.collections;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -11,9 +11,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
    Interface) List
              implements
  Vector, Arraylist, LinkedList, CopyOnWriteArrayList
-
+List permet de stocker des éléments en double
+List accépte des valeurs null
+List maintient l'ordre d'insertion
  */
-public class ListTest {
+public class ListCollection {
     public static void main(String[] args) {
         System.out.println("-------------------");
         System.out.println("Iterator");
@@ -37,10 +39,10 @@ public class ListTest {
         System.out.println("-------------------");
         /*
         ArrayList
-        - garde l'ordre d'insertion
         - accépte le doublon
-        - preferable si on fait plus de get()
         - non thread-safe
+        - lente car elle utilise en interne un tableau.
+          Si un élément est supprimé du tableau, tous les bits sont déplacés en mémoire
          */
         ArrayList<String> tab = new ArrayList<>();
         tab.add("A");
@@ -58,10 +60,13 @@ public class ListTest {
         System.out.println("LinkedList<E>");
         System.out.println("-------------------");
         /*
-        LinkedList
+        LinkedList (liste chainée)
         - LinkedList utile pour inserer un element au milieu de la list
         - maintient les pointeurs sur les elements
-        - preferable si on fait plus de put
+        - Plus rapide que ArrayList, car elle utilise une liste doublement chainée (Doubly linked list),
+        de sorte qu'aucun décalage de bit n'est requis en mémoire
+        - Préférable pour manipuler des données
+        - La classe LinkedList peut servir de liste et de file car elle implémente les interfaces List<E>, Deque<E>.
          */
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("A");
@@ -76,7 +81,9 @@ public class ListTest {
         System.out.println("-------------------");
         /*
         Class CopyOnWriteArrayList<E>
+        - Même que Arraylist, mais synchronisé
         - Thread-safe (cette classe est conçue pour fonctionner en multi-thread, les données sont synchronisés)
+        - Préférable pour plus lecture des données
          */
         CopyOnWriteArrayList<Integer> numbers = new CopyOnWriteArrayList<>();
         numbers.add(1);
@@ -92,8 +99,10 @@ public class ListTest {
         /*
         Vector
         - Thread-safe
+        - Implémente interface List à partir de 1.2
          */
         Vector<String> strings = new Vector<>();
+        strings.add("Java");
         strings.add("Java");
         strings.add("Go");
         strings.add("PHP");
