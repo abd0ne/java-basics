@@ -15,3 +15,7 @@ Chaque "package" correspond une fonctionnalité de Java.
        |--- interfaces : Interface est une classe abstraite dont toutes les méthodes sont abstraites
             et dont tous les attributs sont constants
        |--- enum : Enum est une série de données constantes ayant un type sûr
+       |--- statics :
+            - static est utilisable pour des variables, méthodes, classes internes ou blocs de code.
+            - static est utilisé pour les variables/ méthodes de classe. 
+              Ces variables/méthodes n'appartiennent pas à une instance particulière de la classe.
