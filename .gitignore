@@ -254,7 +254,6 @@ modules.xml
 hs_err_pid*
 
 # not ready projects
-generics
 interneLocaleAnonyme
 map
 trywithresources

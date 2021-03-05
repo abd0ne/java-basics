@@ -46,14 +46,25 @@ public class ListCollection {
          */
         ArrayList<String> tab = new ArrayList<>();
         tab.add("A");
-        tab.add("BB");
+        tab.add("B");
         tab.add("C");
         tab.add("D");
         tab.add("1");
         tab.add(1, "F");
-        tab.set(1, "BBB");
+        tab.set(1, "BB");
         tab.forEach(System.out::println);
-        System.out.println(tab.get(4));
+        System.out.println();
+        /*
+        Heritage
+         */
+        ArrayList<Vehicle> motos = new ArrayList<>();
+        motos.add(new Moto("BMW"));
+        motos.add(new Moto("Yamaha"));
+        ArrayList<Car> cars = new ArrayList<>();
+        cars.add(new Car("Audi"));
+        cars.add(new Car("Tesla"));
+        list(motos);
+        list(cars);
 
         System.out.println();
         System.out.println("-------------------");
@@ -108,5 +119,12 @@ public class ListCollection {
         strings.add("PHP");
         strings.add("Python");
         strings.forEach(System.out::println);
+
+    }
+
+    public static void list(ArrayList<? extends Vehicle> vehicles){
+        for (Vehicle vehicle : vehicles){
+            System.out.println(vehicle.name);
+        }
     }
 }
