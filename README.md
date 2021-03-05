@@ -17,5 +17,5 @@ Chaque "package" correspond une fonctionnalité de Java.
        |--- enum : Enum est une série de données constantes ayant un type sûr
        |--- statics :
             - static est utilisable pour des variables, méthodes, classes internes ou blocs de code.
-            - static est utilisé pour les variables/ méthodes de classe. 
+            - static est utilisé pour créer des variables/ méthodes de classe. 
               Ces variables/méthodes n'appartiennent pas à une instance particulière de la classe.
