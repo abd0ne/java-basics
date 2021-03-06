@@ -22,7 +22,8 @@ Chaque "package" correspond une fonctionnalité de Java.
             - static est utilisé pour créer des variables/ méthodes de classe. 
               Ces variables/méthodes n'appartiennent pas à une instance particulière de la classe.
         
-        |---- trywithresources : try-with-resources permet de gérer proprement la fermeture des ressources de manière simple et efficace
+        |---- trywithresources : try-with-resources permet de gérer proprement 
+            la fermeture des ressources de manière simple et efficace
                 try ( /* 1 - Création des ressources */ ) {
                     // 2 - Utilisation des ressources
                 }
